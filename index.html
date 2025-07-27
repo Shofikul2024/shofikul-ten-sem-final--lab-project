@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Haven - Your Gadget Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#home" class="logo"> <i class="fas fa-laptop-code"></i> Tech Haven </a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <div class="dropdown">
+                <a href="#shop" class="dropbtn">Shop <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#laptops">Laptops</a>
+                    <a href="#desktops">Desktops</a>
+                    <a href="#components">Components</a>
+                    <a href="#accessories">Accessories</a>
+                </div>
+            </div>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <button id="menu-btn" class="fas fa-bars" aria-label="Open Menu"></button>
+            <button id="search-btn" class="fas fa-search" aria-label="Open Search"></button>
+            <a href="#" class="cart-icon-wrapper" aria-label="View Shopping Cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-item-count">0</span>
+            </a>
+            <button id="login-btn" class="fas fa-user" aria-label="Open Login"></button>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Search products...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <section class="home" id="home">
+        <div class="slides-container">
+            <div class="slide active">
+                <div class="content">
+                    <span>New Arrivals</span>
+                    <h3>The Future is Now</h3>
+                    <a href="#shop" class="btn">Shop Now</a>
+                </div>
+                <div class="img">
+                    <img src="https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Laptop on a desk">
+                </div>
+            </div>
+
+
+
+
+            <div class="slide active">
+                <div class="content">
+                    <span>New Arrivals</span>
+                    <h3>The Future is Now</h3>
+                    <a href="#shop" class="btn">Shop Now</a>
+                </div>
+                <div class="img">
+                    <img src="https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Laptop on a desk">
+                </div>
+            </div>
+
+
+
+            <div class="slide active">
+                <div class="content">
+                  <h3> Shofikul Head of the </h3>  
+                    <h3> Tech Haven</h3>
+                    <a href="#shop" class="btn">Shop Now</a>
+                </div>
+                <div class="img">
+                    <img style="width: 70%; height:7%" src="./images/shofikul-2.jpg" alt="Laptop on a desk">
+                </div>
+            </div>
+
+
+
+
+
+            <div class="slide active">
+                <div class="content">
+                    <!-- <span>Shofikul Head of the</span> -->
+                    <h3> All Engineer  with </h3>
+                    <h3> Head of the Tech Haven   </h3>
+                    <a href="#shop" class="btn">Shop Now</a>
+                </div>
+                <div class="img">
+                    <img src="./images/group-pic.jpg" alt="Laptop on a desk">
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div class="slide">
+                <div class="content">
+                    <span>Top Gadgets</span>
+                    <h3>Immersive Audio</h3>
+                    <a href="#shop" class="btn">Shop Now</a>
+                </div>
+                <div class="img">
+                    <img src="https://images.pexels.com/photos/3781529/pexels-photo-3781529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Headphones">
+
+                </div>
+            </div>
+        </div>
+        <div id="next-slide" class="fas fa-angle-right"></div>
+        <div id="prev-slide" class="fas fa-angle-left"></div>
+    </section>
+
+
+<!-- ==================================================                   laptop section part              ===================================================== -->
+
+    <main id="shop">
+        <section class="products" id="laptops">
+            <h1 class="title">Laptops</h1>
+            <div class="box-container">
+                <div class="box" data-name="ultra-slim notebook"><div class="icons"><button class="fas fa-shopping-cart"></button><button class="fas fa-heart"></button><button class="fas fa-eye"></button></div><div class="img"><img src="https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=400" alt="Ultra-Slim Notebook"></div><div class="content"><h3>Ultra-Slim Notebook</h3><div class="price">$999</div></div></div>
+                <div class="box" data-name="gaming laptop"><div class="icons"><button class="fas fa-shopping-cart"></button><button class="fas fa-heart"></button><button class="fas fa-eye"></button></div><div class="img"><img src="https://images.pexels.com/photos/4005579/pexels-photo-4005579.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Gaming Laptop"></div><div class="content"><h3>Gaming Laptop</h3><div class="price">$1499</div></div></div>
+                <div class="box" data-name="business ultrabook"><div class="icons"><button class="fas fa-shopping-cart"></button><button class="fas fa-heart"></button><button class="fas fa-eye"></button></div><div class="img"><img src="https://images.pexels.com/photos/811587/pexels-photo-811587.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Business Ultrabook"></div><div class="content"><h3>Business Ultrabook</h3><div class="price">$1250</div></div></div>
+                <div class="box" data-name="2-in-1 convertible"><div class="icons"><button class="fas fa-shopping-cart"></button><button class="fas fa-heart"></button><button class="fas fa-eye"></button></div><div class="img"><img src="https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&w=400" alt="2-in-1 Convertible"></div><div class="content"><h3>2-in-1 Convertible</h3><div class="price">$1100</div></div></div>
+                <div class="box" data-name="student chromebook"><div class="icons"><button class="fas fa-shopping-cart"></button><button class="fas fa-heart"></button><button class="fas fa-eye"></button></div><div class="img"><img src="https://images.pexels.com/photos/205421/pexels-photo-205421.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Student Chromebook"></div><div class="content"><h3>Student Chromebook</h3><div class="price">$350</div></div></div>
+                <div class="box" data-name="pro creator laptop"><div class="icons"><button class="fas fa-shopping-cart"></button><button class="fas fa-heart"></button><button class="fas fa-eye"></button></div><div class="img"><img src="https://images.pexels.com/photos/38568/apple-imac-ipad-workplace-38568.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Pro Creator Laptop"></div><div class="content"><h3>Pro Creator Laptop</h3><div class="price">$2200</div></div></div>
+            </div>
+        </section>
+
+
+
+
+
+<!-- ==================================================        desktop section part              ===================================================== -->
+
+  
+
+
+
+        <section class="products" id="desktops">
+            <h1 class="title">Desktops</h1>
+            <div class="box-container">
+                <div class="box" data-name="gaming desktop pc"><div class="icons"><button class="fas fa-shopping-cart"></button><button class="fas fa-heart"></button><button class="fas fa-eye"></button></div><div class="img"><img src="https://images.pexels.com/photos/777001/pexels-photo-777001.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Gaming Desktop PC"></div><div class="content"><h3>Gaming Desktop PC</h3><div class="price">$1999</div></div></div>
+                <div class="box" data-name="all-in-one pc"><div class="icons"><button class="fas fa-shopping-cart"></button><button class="fas fa-heart"></button><button class="fas fa-eye"></button></div><div class="img"><img src="https://images.pexels.com/photos/2115257/pexels-photo-2115257.jpeg?auto=compress&cs=tinysrgb&w=400" alt="All-in-One PC"></div><div class="content"><h3>All-In-One PC</h3><div class="price">$1350</div></div></div>
+                <!-- <div class="box" data-name="office workstation"><div class="icons"><button class="fas fa-shopping-cart"></button><button class="fas fa-heart"></button><button class="fas fa-eye"></button></div><div class="img"><img src="https://images.pexels.com/photos/38271/imac-os-x-computer-apple-38271.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Office Workstation"></div><div class="content"><h3>Office Workstation</h3><div class="price">$950</div></div></div> -->
+               <div class="box" data-name="office workstation">
+    <div class="icons">
+        <button class="fas fa-shopping-cart"></button>
+        <button class="fas fa-heart"></button>
+        <button class="fas fa-eye"></button>
+    </div>
+    <div class="img">
+        <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Office Workstation">
+    </div>
+    <div class="content">
+        <h3>Office Workstation</h3>
+        <div class="price">$950</div>
+    </div>
+</div>
+                <div class="box" data-name="compact mini pc"><div class="icons"><button class="fas fa-shopping-cart"></button><button class="fas fa-heart"></button><button class="fas fa-eye"></button></div><div class="img"><img src="https://images.pexels.com/photos/1010496/pexels-photo-1010496.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Compact Mini PC"></div><div class="content"><h3>Compact Mini PC</h3><div class="price">$600</div></div></div>
+            </div>
+        </section>
+
+
+
+<!-- ==================================================        component   section part              ===================================================== -->
+
+
+        
+        <section class="products" id="components">
+            <h1 class="title">Components</h1>
+            <div class="box-container">
+                
+
+                <div class="box" data-name="graphics card gpu">
+    <div class="icons">
+        <button class="fas fa-shopping-cart"></button>
+        <button class="fas fa-heart"></button>
+        <button class="fas fa-eye"></button>
+    </div>
+    <div class="img">
+        <img src="https://images.pexels.com/photos/4792729/pexels-photo-4792729.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Graphics Card">
+    </div>
+    <div class="content">
+        <h3>Graphics Card GPU</h3>
+        <div class="price">$799</div>
+    </div>
+</div>
+                
+                <!-- <div class="box" data-name="graphics card gpu"><div class="icons"><button class="fas fa-shopping-cart"></button><button class="fas fa-heart"></button><button class="fas fa-eye"></button></div><div class="img"><img src="https://images.pexels.com/photos/16014167/pexels-photo-16014167/free-photo-of-a-close-up-of-a-video-card.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Graphics Card"></div><div class="content"><h3>Graphics Card GPU</h3><div class="price">$799</div></div></div> -->
+                <div class="box" data-name="processor cpu"><div class="icons"><button class="fas fa-shopping-cart"></button><button class="fas fa-heart"></button><button class="fas fa-eye"></button></div><div class="img"><img src="https://images.pexels.com/photos/14352136/pexels-photo-14352136.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Processor"></div><div class="content"><h3>Processor CPU</h3><div class="price">$450</div></div></div>
+                <div class="box" data-name="ram memory module"><div class="icons"><button class="fas fa-shopping-cart"></button><button class="fas fa-heart"></button><button class="fas fa-eye"></button></div><div class="img"><img src="https://images.pexels.com/photos/4792717/pexels-photo-4792717.jpeg?auto=compress&cs=tinysrgb&w=400" alt="RAM"></div><div class="content"><h3>RAM Memory Module</h3><div class="price">$150</div></div></div>
+                <div class="box" data-name="usb pendrive">
+    <div class="icons">
+        <button class="fas fa-shopping-cart"></button>
+        <button class="fas fa-heart"></button>
+        <button class="fas fa-eye"></button>
+    </div>
+    <div class="img">
+        <img src="https://images.pexels.com/photos/4006146/pexels-photo-4006146.jpeg?auto=compress&cs=tinysrgb&w=600" alt="USB Pendrive">
+    </div>
+    <div class="content">
+        <h3>USB Pendrive</h3>
+        <div class="price">$25</div>
+    </div>
+</div>
+                
+                <div class="box" data-name="solid state drive ssd"><div class="icons"><button class="fas fa-shopping-cart"></button><button class="fas fa-heart"></button><button class="fas fa-eye"></button></div><div class="img"><img src="https://images.pexels.com/photos/4316/technology-computer-chips-gigabyte.jpg?auto=compress&cs=tinysrgb&w=400" alt="SSD"></div><div class="content"><h3>Solid State Drive SSD</h3><div class="price">$120</div></div></div>
+            </div>
+        </section>
+
+
+
+
+
+<!-- ==================================================        accessories     section part              ===================================================== -->
+
+
+        <section class="products" id="accessories">
+            <h1 class="title">Accessories</h1>
+            <div class="box-container">
+                <div class="box" data-name="wireless headphone"><div class="icons"><button class="fas fa-shopping-cart"></button><button class="fas fa-heart"></button><button class="fas fa-eye"></button></div><div class="img"><img src="https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Wireless Headphone"></div><div class="content"><h3>Wireless Headphone</h3><div class="price">$199</div></div></div>
+                <div class="box" data-name="gaming mouse"><div class="icons"><button class="fas fa-shopping-cart"></button><button class="fas fa-heart"></button><button class="fas fa-eye"></button></div><div class="img"><img src="https://images.pexels.com/photos/4994803/pexels-photo-4994803.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Gaming Mouse"></div><div class="content"><h3>Gaming Mouse</h3><div class="price">$79</div></div></div>
+                <div class="box" data-name="mechanical keyboard"><div class="icons"><button class="fas fa-shopping-cart"></button><button class="fas fa-heart"></button><button class="fas fa-eye"></button></div><div class="img"><img src="https://images.pexels.com/photos/2115217/pexels-photo-2115217.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Mechanical Keyboard"></div><div class="content"><h3>Mechanical Keyboard</h3><div class="price">$129</div></div></div>
+
+                <div class="box" data-name="bluetooth sound box"><div class="icons"><button class="fas fa-shopping-cart"></button><button class="fas fa-heart"></button><button class="fas fa-eye"></button></div><div class="img"><img src="https://images.pexels.com/photos/1279813/pexels-photo-1279813.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Sound Box"></div><div class="content"><h3>Bluetooth Sound Box</h3><div class="price">$99</div></div></div>
+                <div class="box" data-name="4k monitor"><div class="icons"><button class="fas fa-shopping-cart"></button><button class="fas fa-heart"></button><button class="fas fa-eye"></button></div><div class="img"><img src="https://images.pexels.com/photos/1999463/pexels-photo-1999463.jpeg?auto=compress&cs=tinysrgb&w=400" alt="4k Monitor"></div><div class="content"><h3>4K Monitor</h3><div class="price">$450</div></div></div>
+                <!-- <div class="box" data-name="studio microphone"><div class="icons"><button class="fas fa-shopping-cart"></button><button class="fas fa-heart"></button><button class="fas fa-eye"></button></div><div class="img"><img src="https://images.pexels.com/photos/3756943/pexels-photo-3756943.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Studio Microphone"></div><div class="content"><h3>Studio Microphone</h3><div class="price">$129</div></div></div> -->
+                <!-- <div class="box" data-name="usb pendrive">
+    <div class="icons">
+        <button class="fas fa-shopping-cart"></button>
+        <button class="fas fa-heart"></button>
+        <button class="fas fa-eye"></button>
+    </div>
+    <div class="img">
+        <img src="https://images.pexels.com/photos/4006146/pexels-photo-4006146.jpeg?auto=compress&cs=tinysrgb&w=600" alt="USB Pendrive">
+    </div>
+    <div class="content">
+        <h3>USB Pendrive</h3>
+        <div class="price">$25</div>
+    </div>
+</div> -->
+                <div class="box" data-name="1080p webcam">
+    <div class="icons">
+        <button class="fas fa-shopping-cart"></button>
+        <button class="fas fa-heart"></button>
+        <button class="fas fa-eye"></button>
+    </div>
+    <div class="img">
+        <img src="https://images.pexels.com/photos/7176319/pexels-photo-7176319.jpeg?auto=compress&cs=tinysrgb&w=600" alt="1080p Webcam">
+    </div>
+    <div class="content">
+        <h3>1080p Webcam</h3>
+        <div class="price">$65</div>
+    </div>
+</div>
+                <!-- <div class="box" data-name="1080p webcam"><div class="icons"><button class="fas fa-shopping-cart"></button><button class="fas fa-heart"></button><button class="fas fa-eye"></button></div><div class="img"><img src="https://images.pexels.com/photos/6682542/pexels-photo-6682542.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Webcam"></div><div class="content"><h3>1080p Webcam</h3><div class="price">$65</div></div></div> -->
+                <div class="box" data-name="gaming headset"><div class="icons"><button class="fas fa-shopping-cart"></button><button class="fas fa-heart"></button><button class="fas fa-eye"></button></div><div class="img"><img src="https://images.pexels.com/photos/3587478/pexels-photo-3587478.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Gaming Headset"></div><div class="content"><h3>Gaming Headset</h3><div class="price">$150</div></div></div>
+                <div class="box" data-name="wireless keyboard"><div class="icons"><button class="fas fa-shopping-cart"></button><button class="fas fa-heart"></button><button class="fas fa-eye"></button></div><div class="img"><img src="https://images.pexels.com/photos/841228/pexels-photo-841228.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Wireless Keyboard"></div><div class="content"><h3>Wireless Keyboard</h3><div class="price">$89</div></div></div>
+                <div class="box" data-name="noise cancelling earbuds"><div class="icons"><button class="fas fa-shopping-cart"></button><button class="fas fa-heart"></button><button class="fas fa-eye"></button></div><div class="img"><img src="https://images.pexels.com/photos/3825586/pexels-photo-3825586.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Noise Cancelling Earbuds"></div><div class="content"><h3>Noise Cancelling Earbuds</h3><div class="price">$180</div></div></div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+    <section class="about" id="about">
+        <div class="img">
+            <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="About Us Image">
+        </div>
+        <div class="content">
+            <h3>Welcome To Tech Haven</h3>
+            <p>Welcome to Tech Haven, your ultimate destination for the latest in technology. We are dedicated to providing top-quality gadgets, from powerful computers to essential accessories, all curated by a team of passionate tech enthusiasts.</p>
+            <p>Our mission is to bring you the best products at competitive prices, backed by excellent customer service. Join us on this journey of technological discovery!</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="title">Contact <span>Us</span></h1>
+        <div class="icons-container">
+            <div class="icons">
+                <i class="fas fa-phone"></i>
+                <h3>Contact Number</h3>
+                <!-- <p>+123 456 7890</p> -->
+                <p>01746399687</p>
+
+            </div>
+            <div class="icons">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <!-- <p>support@techhaven.com</p> -->
+                <p>islamshofi942@gmail.com</p>
+            </div>
+            <div class="icons">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Address</h3>
+                <!-- <p>123 Tech Street, Silicon Valley</p> -->
+                <p>123 Tech Street, Dhaka </p>
+                <p><a href="https://www.google.com/maps/search/?api=1&query=Green+Road%2C+Dhaka" target="_blank">Green Road, Dhaka, Bangladesh</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <form action="">
+                <h3>Get In Touch</h3>
+                <div class="inputBox">
+                    <input type="text" placeholder="Your Name" class="box">
+                    <input type="email" placeholder="Your Email" class="box">
+                </div>
+                <textarea placeholder="Your Message" class="box" cols="30" rows="10"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </div>
+    </section>
+    
+
+
+
+<footer class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#home"><i class="fas fa-arrow-right"></i> Home</a>
+                <a href="#shop"><i class="fas fa-arrow-right"></i> Shop</a>
+                <a href="#about"><i class="fas fa-arrow-right"></i> About</a>
+                <a href="#contact"><i class="fas fa-arrow-right"></i> Contact</a>
+            </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <!-- <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a> -->
+                <a href="https://www.facebook.com/share/19PjMrpXgA/"  target="_blank" >Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <!-- <a href="#"><i class="fab fa-instagram"></i> Instagram</a> -->
+                <a href="https://www.instagram.com/mdshofikul492?igsh=MTFoY2gzdTFmNnYxaw==" target="_blank ">Instagram</a>
+            </div>
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Don't miss any offers!</p>
+                <form action="">
+                    <input type="email" placeholder="your.email@example.com">
+                    <input type="submit" value="Subscribe" class="btn">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <div class="credit">Created by <span>Shofikul Islam</span> | All Rights Reserved</div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html> 
