@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.querySelector(".header .navbar");
     const searchForm = document.querySelector(".header .search-form");
     
+
     // Slider elements
     const slides = document.querySelectorAll(".home .slides-container .slide");
     const nextBtn = document.querySelector("#next-slide");
@@ -22,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Event Listeners ---
 
+    
     // Toggle mobile navigation menu
     menuBtn.onclick = () => {
         navbar.classList.toggle('active');
