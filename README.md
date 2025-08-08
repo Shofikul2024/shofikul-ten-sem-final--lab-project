@@ -1,4 +1,8 @@
 Shofikul-Islam Tech Point 💻
+
+
+
+
 Shofikul-Islam Tech Point is a fully functional e-commerce website for a computer and accessories store, built with HTML, CSS, and JavaScript. The website allows users to browse tech products, add them to a shopping cart, register or log in to an account, proceed through a checkout with a mock payment system, and explore products organized by category. A dedicated admin dashboard is included for managing the product inventory.
 
 Features
@@ -22,18 +26,10 @@ Admin Dashboard: A secure area for adding or deleting products from the store's 
 
 Responsive Design: Built with pure CSS and media queries to ensure a seamless experience on both desktop and mobile devices.
 
-Project Structure
-/
-|-- index.html          # Main home page with all products
-|-- loging.html         # User login page
-|-- register.html       # User registration page
-|-- cart.html           # Shopping cart page
-|-- checkout.html       # Checkout page with mock payment form
-|-- admin.html          # Admin dashboard for managing products
-|-- style.css           # Custom CSS for primary styling and layout
-|-- styles.css          # Additional styles (used for admin/auth pages)
-|-- script.js           # JavaScript for all dynamic functionality
-|-- images/             # Folder for local product images
+
+
+
+
 Setup Instructions
 1. Clone or Download
 Download all project files (index.html, loging.html, register.html, cart.html, checkout.html, admin.html, style.css, styles.css, script.js) and the images folder into a single directory on your local machine.
@@ -96,6 +92,9 @@ Limitations
 Data Persistence: All data (users, cart, products) is stored in the browser's localStorage, which is not suitable for a production environment. A real-world application would require a backend database (e.g., MySQL, PostgreSQL, MongoDB).
 
 Admin Functionality: The admin dashboard is basic and only supports adding and deleting products. A complete system would include features for editing products, managing orders, and viewing user data.
+
+
+
 
 Future Improvements
 Implement a backend using a framework like Node.js/Express for robust data management and API creation.
