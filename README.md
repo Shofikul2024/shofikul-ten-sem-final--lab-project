@@ -40,27 +40,6 @@ Responsive Design: Built with pure CSS and media queries to ensure a seamless ex
 
 
 
-Project Structure
-
-
-
-
-/
-|-- index.html          # Main home page with all products
-|-- loging.html         # User login page
-|-- register.html       # User registration page
-|-- cart.html           # Shopping cart page
-|-- checkout.html       # Checkout page with mock payment form
-|-- admin.html          # Admin dashboard for managing products
-|-- style.css           # Custom CSS for primary styling and layout
-|-- styles.css          # Additional styles (used for admin/auth pages)
-|-- script.js           # JavaScript for all dynamic functionality
-|-- images/             # Folder for local product images
-
-
-
-
-
 
 Setup Instructions
 
