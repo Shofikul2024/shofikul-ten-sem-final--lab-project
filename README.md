@@ -82,3 +82,16 @@ To avoid **CORS issues** with `localStorage`, run a **local server**.
 python -m http.server 8000
 
 
+
+
+
+💡 Future Improvements
+Implement a backend using a framework like Django for robust data management and API creation.
+
+Integrate a real payment gateway for actual transactions.
+
+Enhance the admin dashboard with product editing, order management, and analytics.
+
+Add more advanced filtering and sorting options for products on the shop page.
+
+Develop a "user profile" page where users can view their order history.
