@@ -56,7 +56,7 @@ Open your terminal or command prompt.
 Navigate to the project directory.
 
 
-Run the following command (requires Python):
+Run the following command :
 
 
 
@@ -116,7 +116,7 @@ Payment System: The checkout page features a mock payment form for demonstration
 Admin User: A temporary admin user is created by default if no users exist in localStorage. You can modify the credentials or add more admins by editing the script.js file.
 
 Limitations
-Data Persistence: All data (users, cart, products) is stored in the browser's localStorage, which is not suitable for a production environment. A real-world application would require a backend database (e.g., MySQL, PostgreSQL, MongoDB).
+Data Persistence: All data (users, cart, products) is stored in the browser's localStorage, which is not suitable for a production environment. A real-world application would require a backend database (e.g., MySQL ).
 
 Admin Functionality: The admin dashboard is basic and only supports adding and deleting products. A complete system would include features for editing products, managing orders, and viewing user data.
 
