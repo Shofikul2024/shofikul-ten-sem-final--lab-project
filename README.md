@@ -4,8 +4,12 @@ Welcome to Shofikul-Islam Tech Point, a fully responsive e-commerce website for 
 
 ---
 
+
+
 ## ✨ Features
 
+Customer-Facing
+ 
 ### 🏠 Home Page
 - Dynamic **image slider**.
 - **Product grid** with names, prices, and images.
@@ -14,6 +18,25 @@ Welcome to Shofikul-Islam Tech Point, a fully responsive e-commerce website for 
   - 🖥 **Desktops**
   - ⚙️ **Components**
   - 🎧 **Accessories**
+
+
+Features an auto-playing image slider for promotions.
+
+Product Categories: Browse items in dedicated sections:
+
+Laptops
+
+Desktops
+
+Components
+
+Accessories
+
+ 
+ 
+🛠️ Technologies Used
+Front-End: HTML5, CSS3, JavaScript
+
 
 ### 🔍 Live Product Search
 - Real-time filtering via integrated search bar.
@@ -38,6 +61,7 @@ Welcome to Shofikul-Islam Tech Point, a fully responsive e-commerce website for 
 
 ### 🛠 Admin Dashboard
 - Add/delete products from store inventory (**admin-only access**).
+
 
 ### 📱 Responsive Design
 - Pure **CSS + media queries** for seamless desktop and mobile experience.
