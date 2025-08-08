@@ -27,6 +27,7 @@ Project Structure
 |-- styles.css          # Additional styles (used for admin/auth pages)
 |-- script.js           # JavaScript for all dynamic functionality
 |-- images/             # Folder for local product images
+
 ________________________________________
 Setup Instructions
 1. Clone or Download
