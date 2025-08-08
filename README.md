@@ -1,8 +1,6 @@
 # 💻 Shofikul-Islam Tech Point
 
-**Shofikul-Islam Tech Point** is a fully functional e-commerce website for a **computer and accessories store**, built with **HTML, CSS, and JavaScript**.  
-It allows users to **browse tech products**, **add them to a shopping cart**, **register/login**, **checkout with a mock payment system**, and **explore categorized products**.  
-A **dedicated admin dashboard** is included for managing product inventory.
+Welcome to Shofikul-Islam Tech Point, a fully responsive e-commerce website for desktops, laptops, components, and accessories. This project is built using pure HTML, CSS, and JavaScript, demonstrating a clean front-end interface with essential e-commerce functionalities like a product catalog, search, and a shopping cart. It also includes a separate admin dashboard for product management.
 
 ---
 
