@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Shofikul-Islam Tech Point</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header class="header">
+        <a href="index.html" class="logo"> <i class="fas fa-laptop-code"></i> Shofikul-Islam Tech Point </a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Shop <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="laptops.html">Laptops</a>
+                    <a href="desktops.html">Desktops</a>
+                    <a href="components.html">Components</a>
+                    <a href="accessories.html">Accessories</a>
+                </div>
+            </div>
+            <a href="about-us.html">About</a>
+            <a href="contact-us.html">Contact</a>
+            <a href="blog.html">Blog</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+        <div class="icons">
+            <button id="menu-btn" class="fas fa-bars" aria-label="Open Menu"></button>
+            <button id="search-btn" class="fas fa-search" aria-label="Open Search"></button>
+            <a href="cart.html" class="cart-icon-wrapper" aria-label="View Shopping Cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-item-count">0</span>
+            </a>
+            <a href="loging.html" id="login-btn" class="fas fa-user" aria-label="Open Login"></a>
+        </div>
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Search products...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <main>
+        <section class="blog-section" style="padding-top: 12rem;">
+            <h1 class="title">From Our Blog</h1>
+            <div class="blog-container">
+                <div class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="https://images.pexels.com/photos/4145190/pexels-photo-4145190.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Laptop Buying Guide">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="date">August 12, 2025</span>
+                        <h3>The Ultimate 2025 Laptop Buying Guide</h3>
+                        <p>Choosing a new laptop can be tough. Our guide breaks down everything you need to know about CPUs, GPUs, RAM, and more...</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="https://images.pexels.com/photos/777001/pexels-photo-777001.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Desk Setup">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="date">August 08, 2025</span>
+                        <h3>5 Tips for a Productive Desk Setup</h3>
+                        <p>Your workspace affects your productivity. Here are five essential tips to create a clean, ergonomic, and efficient desk setup...</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                     <div class="blog-card-image">
+                        <img src="./images/graphic -card.jpg" alt="GPU">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="date">August 02, 2025</span>
+                        <h3>Do You Really Need the Latest GPU?</h3>
+                        <p>New graphics cards are released every year, but is the latest and greatest always necessary? We explore the benefits and costs...</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        </footer>
+    <div class="credit">Created by <span>Shofikul Islam</span> | All Rights Reserved</div>
+    <script src="script.js"></script>
+</body>
+</html>

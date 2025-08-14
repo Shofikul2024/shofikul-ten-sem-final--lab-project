@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powerful Gaming Laptop - Shofikul-Islam Tech Point</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"> <i class="fas fa-laptop-code"></i> Shofikul-Islam Tech Point </a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Shop <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="laptops.html">Laptops</a>
+                    <a href="desktops.html">Desktops</a>
+                    <a href="components.html">Components</a>
+                    <a href="accessories.html">Accessories</a>
+                </div>
+            </div>
+            <a href="about-us.html">About</a>
+            <a href="./contac-us.html">Contact</a>
+            <a href="blog.html">Blog</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+        <div class="icons">
+            <button id="menu-btn" class="fas fa-bars" aria-label="Open Menu"></button>
+            <button id="search-btn" class="fas fa-search" aria-label="Open Search"></button>
+            <a href="cart.html" class="cart-icon-wrapper" aria-label="View Shopping Cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-item-count">0</span>
+            </a>
+            <a href="loging.html" id="login-btn" class="fas fa-user" aria-label="Open Login"></a>
+        </div>
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Search products...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <main>
+        <section class="product-detail-section" style="padding-top: 12rem;">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="main-image mb-4">
+                            <img src="./images/high-angle-gamer-playing-laptop.jpg" alt="Powerful Gaming Laptop" class="w-full rounded-lg shadow-lg">
+                        </div>
+                        <div class="thumbnail-images grid grid-cols-4 gap-2">
+                            <img src="./images/high-angle-gamer-playing-laptop.jpg" alt="Thumbnail 1" class="cursor-pointer rounded border-2 border-blue-500">
+                            <img src="https://images.pexels.com/photos/392010/pexels-photo-392010.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Thumbnail 2" class="cursor-pointer rounded border-2 border-transparent hover:border-blue-500">
+                             <img src="https://images.pexels.com/photos/129208/pexels-photo-129208.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Thumbnail 3" class="cursor-pointer rounded border-2 border-transparent hover:border-blue-500">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <h1 class="text-4xl font-bold text-gray-800 mb-2">Powerful Gaming Laptop</h1>
+                        <p class="text-gray-500 mb-4">Brand: ProGamer</p>
+                        <div class="price text-5xl font-bold text-blue-600 mb-6">$1499.00</div>
+                        <p class="text-gray-700 leading-relaxed mb-6">
+                            Unleash your gaming potential with the ProGamer X1. Featuring a top-tier processor and a dedicated graphics card, this laptop delivers buttery-smooth frame rates and stunning visuals for an immersive gaming experience.
+                        </p>
+                        <div class="specifications mb-6">
+                            <h3 class="text-xl font-semibold mb-2">Key Specifications:</h3>
+                            <ul class="list-disc list-inside text-gray-600">
+                                <li><strong>CPU:</strong> 12th Gen Intel Core i9</li>
+                                <li><strong>GPU:</strong> NVIDIA GeForce RTX 4070</li>
+                                <li><strong>RAM:</strong> 32GB DDR5</li>
+                                <li><strong>Storage:</strong> 2TB NVMe SSD</li>
+                                <li><strong>Display:</strong> 16-inch QHD+ 240Hz</li>
+                            </ul>
+                        </div>
+                        <button class="w-full btn text-lg">Add to Cart <i class="fas fa-shopping-cart ml-2"></i></button>
+                    </div>
+                </div>
+
+                <div class="customer-reviews mt-12">
+                    <h2 class="title">Customer Reviews</h2>
+                    <div class="review-box bg-white p-6 rounded-lg shadow mb-4">
+                        <div class="flex items-center mb-2">
+                            <div class="stars text-yellow-400">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <span class="font-bold ml-3">Absolutely a Beast!</span>
+                        </div>
+                        <p class="text-gray-600">This laptop handles everything I throw at it without breaking a sweat. Worth every penny!</p>
+                        <p class="text-sm text-gray-500 mt-2">- Alex R. on August 10, 2025</p>
+                    </div>
+                     <div class="review-box bg-white p-6 rounded-lg shadow">
+                        <div class="flex items-center mb-2">
+                            <div class="stars text-yellow-400">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            </div>
+                            <span class="font-bold ml-3">Great Performance</span>
+                        </div>
+                        <p class="text-gray-600">Incredible performance, but the battery life is a bit short when gaming. Otherwise, fantastic.</p>
+                        <p class="text-sm text-gray-500 mt-2">- Jane D. on August 05, 2025</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        </footer>
+    <div class="credit">Created by <span>Shofikul Islam</span> | All Rights Reserved</div>
+    <script src="script.js"></script>
+</body>
+</html>
