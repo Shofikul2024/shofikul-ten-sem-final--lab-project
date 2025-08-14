@@ -376,3 +376,93 @@ function deleteProduct(id) {
         displayAdminProducts(); // Refresh the list
     }
 }
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    // --- Cart Functionality ---
+
+    // Select all product 'add to cart' buttons and the header's cart counter
+    const addToCartButtons = document.querySelectorAll('.products .box .fa-shopping-cart');
+    const cartItemCountElement = document.querySelector('.cart-item-count');
+
+    // Load the cart from browser storage, or create an empty cart if one doesn't exist
+    let cart = JSON.parse(localStorage.getItem('shoppingCart')) || [];
+
+    // Function to save the current cart state to browser storage
+    const saveCart = () => {
+        localStorage.setItem('shoppingCart', JSON.stringify(cart));
+    };
+
+    // Function to update the number displayed on the cart icon
+    const updateCartCounter = () => {
+        cartItemCountElement.textContent = cart.length;
+    };
+
+    // Loop through each 'add to cart' button and add a click event listener
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', (event) => {
+            // Find the parent product card of the button that was clicked
+            const productCard = event.target.closest('.box');
+            
+            // Extract the product's details from the card
+            const productId = productCard.dataset.name;
+            const productName = productCard.querySelector('h3').textContent;
+            const productPrice = productCard.querySelector('.price').textContent;
+            const productImage = productCard.querySelector('img').src;
+
+            // Check if the product is already in the cart to avoid duplicates
+            const isAlreadyInCart = cart.some(item => item.id === productId);
+
+            if (isAlreadyInCart) {
+                alert(`${productName} is already in your cart!`);
+            } else {
+                // If not, create a new product object
+                const newProduct = {
+                    id: productId,
+                    name: productName,
+                    price: productPrice,
+                    image: productImage,
+                    quantity: 1 // Default quantity to 1
+                };
+
+                // Add the new product to the cart array
+                cart.push(newProduct);
+                
+                // Save the updated cart to storage
+                saveCart();
+
+                // Update the cart counter in the header
+                updateCartCounter();
+
+                alert(`${productName} has been added to the cart.`);
+            }
+        });
+    });
+
+    // --- General Page Scripts (for header buttons) ---
+    
+    const searchBtn = document.querySelector('#search-btn');
+    const searchForm = document.querySelector('.search-form');
+    const menuBtn = document.querySelector('#menu-btn');
+    const navbar = document.querySelector('.navbar');
+
+    searchBtn.onclick = () => {
+        searchForm.classList.toggle('active');
+        navbar.classList.remove('active');
+    };
+
+    menuBtn.onclick = () => {
+        navbar.classList.toggle('active');
+        searchForm.classList.remove('active');
+    };
+
+    window.onscroll = () => {
+        searchForm.classList.remove('active');
+        navbar.classList.remove('active');
+    };
+
+    // Update the cart counter when the page first loads
+    updateCartCounter();
+});
