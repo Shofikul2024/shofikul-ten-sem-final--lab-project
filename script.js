@@ -379,6 +379,15 @@ function deleteProduct(id) {
 
 
 
+
+
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // --- Cart Functionality ---
@@ -466,3 +475,95 @@ document.addEventListener('DOMContentLoaded', () => {
     // Update the cart counter when the page first loads
     updateCartCounter();
 });
+
+
+
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     // Select the elements where we'll display cart items and the total price
+//     const cartItemsContainer = document.getElementById('cart-items-container');
+//     const cartTotalElement = document.getElementById('cart-total');
+//     const cartItemCountElement = document.querySelector('.cart-item-count');
+
+//     // Load the cart from browser storage
+//     let cart = JSON.parse(localStorage.getItem('shoppingCart')) || [];
+
+//     // --- Main function to display cart items ---
+//     function displayCartItems() {
+//         // Clear the container before displaying items
+//         cartItemsContainer.innerHTML = '';
+        
+//         // If the cart is empty, show a message
+//         if (cart.length === 0) {
+//             cartItemsContainer.innerHTML = '<p class="empty-cart-message">Your cart is empty.</p>';
+//             updateCartTotal();
+//             updateCartCounter();
+//             return;
+//         }
+
+//         // Loop through each item in the cart and create its HTML element
+//         cart.forEach(item => {
+//             const cartItemElement = document.createElement('div');
+//             cartItemElement.classList.add('cart-item');
+            
+//             cartItemElement.innerHTML = `
+//                 <img src="${item.image}" alt="${item.name}">
+//                 <div class="cart-item-info">
+//                     <h3>${item.name}</h3>
+//                     <div class="price">${item.price}</div>
+//                 </div>
+//                 <button class="remove-btn" data-id="${item.id}">Remove <i class="fas fa-trash"></i></button>
+//             `;
+
+//             cartItemsContainer.appendChild(cartItemElement);
+//         });
+
+//         // Add event listeners to the new "remove" buttons
+//         addRemoveEventListeners();
+//         // Update the total price
+//         updateCartTotal();
+//         // Update the header cart counter
+//         updateCartCounter();
+//     }
+
+//     // --- Function to handle item removal ---
+//     function addRemoveEventListeners() {
+//         const removeButtons = document.querySelectorAll('.remove-btn');
+//         removeButtons.forEach(button => {
+//             button.addEventListener('click', (event) => {
+//                 // Get the unique ID of the item to remove
+//                 const productIdToRemove = event.target.dataset.id;
+                
+//                 // Filter the cart, keeping only items that DON'T match the ID
+//                 cart = cart.filter(item => item.id !== productIdToRemove);
+
+//                 // Save the updated cart back to storage
+//                 localStorage.setItem('shoppingCart', JSON.stringify(cart));
+
+//                 // Re-display the cart to reflect the removal
+//                 displayCartItems();
+//             });
+//         });
+//     }
+
+//     // --- Function to calculate and display the total price ---
+//     function updateCartTotal() {
+//         // Calculate the total by summing up the prices of all items
+//         const total = cart.reduce((sum, item) => {
+//             // Remove '$' and convert price to a number before adding
+//             const price = parseFloat(item.price.replace('$', ''));
+//             return sum + price;
+//         }, 0);
+
+//         // Display the total, formatted to 2 decimal places
+//         cartTotalElement.textContent = `$${total.toFixed(2)}`;
+//     }
+    
+//     // --- Function to update the header cart counter ---
+//     function updateCartCounter() {
+//         cartItemCountElement.textContent = cart.length;
+//     }
+
+//     // Initial call to display the cart when the page loads
+//     displayCartItems();
+// });
